@@ -11,9 +11,10 @@ body, html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8%;
-  width: 790px;
+  width: 750px;
   border-top: 3px solid white;
   padding-top: 35px;
+  font-size: 0;
 }
 
 #anzeige .zeiger {
@@ -44,7 +45,7 @@ body, html {
   margin-top: 35px;
   padding-top: 35px;
   padding-bottom: 35px;
-  width: 790px;
+  width: 750px;
   margin-left: auto;
   margin-right: auto;
   color: white;
