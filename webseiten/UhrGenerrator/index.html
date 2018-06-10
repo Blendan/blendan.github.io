@@ -12,24 +12,24 @@
       <div id="mode">
 
         <fieldset class="box_input">
-          <legend class="text">Master</legend>Farbe:
+          <legend class="text">Master</legend>color:
           <input onchange="master()" id="color_master" class="color" value="#ffffff" name="Color Picker" type="color"></input>
           <br>3D:<br>
           <button type="button" class="button" id="master3d_anz" onclick="master3d_anz()">
             <div class="platz"></div>
             <div id="master3d" class="anzeigebutton"></div>
           </button>
-          <br>Stärke:<br>
+          <br>Strength:<br>
           <input type="text" class="input_text" value="20" id="staerke_3d"/>deg
         </fieldset>
 
         <fieldset class="box_input">
-          <legend class="text">Schatten</legend>Farbe:<input onchange="schatten()" id="color_schatten" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Rundung:<br>
+          <legend class="text">glow:</legend>color:<input onchange="schatten()" id="color_schatten" class="color" value="#ffffff" name="Color Picker" type="color"></input>
+          <br>radius:<br>
           <input type="text" class="input_text" onchange="setrundung()" value="250" id="rundung"/>px
-          <br>Größe:<br>
+          <br>size:<br>
           <input type="text" class="input_text" onchange="setsize()" value="500" min="0" id="size"/>px
-          <br>Abstand Oben:<br>
+          <br>top:<br>
           <input type="text" class="input_text"  onchange="setoben()" value="300" min="0" id="abstand_oben"/>px
           <br>Pulsieren<br>
           <button type="button" class="button" id="Pulsieren" onclick="Pulsieren_an()">
@@ -39,26 +39,26 @@
         </fieldset>
 
         <fieldset class="box_input" id="input_zeiger">
-          <legend class="text">Zeiger</legend>
-          Farbe1:
+          <legend class="text">Indikator</legend>
+          color1:
           <input onchange="zeiger()" id="color_zeiger" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Farbe2:
+          <br>color2:
           <input onchange="zeiger2()" id="color_zeiger2" value="#858585" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Anzeigen:<br>
+          <br>Show:<br>
           <button type="button" class="button" id="zeiger_anzeigen" onclick="zeiger_anz()">
             <div class="platz"></div>
             <div id="anzeigenzeiger" class="anzeigebutton"></div>
           </button>
-          <br>Größe:<br>
+          <br>size:<br>
           <input type="text" class="input_text" onchange="gorssezeiger()" id="grosse_zeiger" value="200"/>px
-          <br>Schatten:<br>
+          <br>glow:<br>
           <button type="button" class="button" id="zeiger_BS_anzeigen" onclick="zeigerBS_anz()">
             <div class="platz"></div>
             <div id="anzeigenBSzeiger" class="anzeigebutton"></div>
           </button>
-          <br>Farbe2:
+          <br>color2:
           <input onchange="zeigerBS()" id="color_zeigerBS" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Sekunden<br>Anzeigen:<br>
+          <br>second<br>Show:<br>
           <button type="button" class="button" id="sekzeiger_anzeigen" onclick="sekzeiger_anz()">
             <div class="platz"></div>
             <div id="sekanzeigenzeiger" class="anzeigebutton"></div>
@@ -71,10 +71,10 @@
         </fieldset>
 
         <fieldset class="box_input">
-          <legend class="text">Markierungen</legend>
-          Farbe:
+          <legend class="text">marks</legend>
+          color:
           <input onchange="colormark()" id="color_mark" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Anzeigen:<br>
+          <br>Show:<br>
           <button type="button" class="button" id="mark_anz" onclick="markanz()">
             <div class="platz"></div>
             <div id="anzeigemark" class="anzeigebutton"></div>
@@ -82,41 +82,41 @@
           <br>Radius:<br>
           <input type="text" class="input_text" onchange="setradiusmark()" value="220" min="0" id="radius_mark"/>px
 
-          <br>Schatten:<br>
+          <br>glow:<br>
           <button type="button" class="button" id="mark_BS_anz" onclick="markBSanz()">
             <div class="platz"></div>
             <div id="anzeigemarkBS" class="anzeigebutton"></div>
           </button>
-          <br>Farbe:
+          <br>color:
           <input onchange="colorBSmark()" id="color_BSmark" class="color" value="#ffffff" name="Color Picker" type="color"></input>
         </fieldset>
 
         <fieldset class="box_input" id="input_zahlen">
-          <legend class="text">Zahlen</legend>Farbe:
+          <legend class="text">Zahlen</legend>color:
           <input onchange="zahlen()" id="color_zahlen" class="color" value="#ffffff" name="Color Picker" type="color"></input>
-          <br>Abstand Oben:<br>
+          <br>top:<br>
           <input type="text" class="input_text" onchange="sethohezahlen()" value="100" min="0" id="hohe_zahlen"/>px
-          <br>Größe:<br>
+          <br>size:<br>
           <input type="text" class="input_text" onchange="setgrossezahlen()" value="70" min="0" id="grosse_zahlen"/>px
-          <br>Anzeigen:<br>
+          <br>Show:<br>
           <button type="button" class="button" id="text_anz" onclick="textanz()">
             <div class="platz"></div>
             <div id="anzeigetext" class="anzeigebutton"></div>
           </button>
-          <br>Schatten<br>
+          <br>glow<br>
           <button type="button" class="button" id="textschatten" onclick="textschatten()">
             <div class="platz"></div>
             <div id="anzeigetextschatten" class="anzeigebutton"></div>
           </button>
-          <br>Farbe:
+          <br>color:
           <input onchange="textschattne_color()" id="color_textschatten" class="color" value="#ffffff" name="Color Picker" type="color"></input>
         </fieldset>
 
         <fieldset class="box_input">
-          <legend class="text">Hintergrund</legend>Farbe:
+          <legend class="text">background</legend>color:
           <input onchange="hintergrund()" id="color_hintergrund" value="#000000" class="color"name="Color Picker" type="color"></input>
         </fieldset>
-        <button type="button" id="generiren" onclick="GeneratorMaster()">Generieren</button>
+        <button type="button" id="generiren" onclick="GeneratorMaster()">Generate</button>
     </div>
 
     <button type="button" name="button" id="menue_off_machen" onclick="menueausmachen()">
@@ -555,6 +555,6 @@
     </button>
   </body>
   <footer>
-    &copy; Philipp Hägerich 2018
+    &copy; Blendan 2018
   </footer>
 </html>
