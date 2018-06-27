@@ -3,6 +3,7 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,21 +14,10 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
-#hauptseite {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 2.5%;
-  height: 90%;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
-  box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
-  border: 1px solid rgba(10, 10, 10, 0.59);
-}
+
 
 .page {
   margin: 0;
@@ -36,10 +26,17 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-top: 2.5%;
+  margin-bottom: 5%;
   height: 90%;
   background: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
   box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
+  border: 1px solid rgba(10, 10, 10, 0.59);
+  border-radius: 10px;
+}
+
+#hauptseite {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .ueberschrift {
@@ -47,5 +44,5 @@ body {
   text-align: center;
   text-decoration: underline;
   font-size: 50px;
-  padding-top: 70px;
+  padding-top: 30px;
 }
