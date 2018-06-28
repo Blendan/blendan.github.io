@@ -37,6 +37,7 @@ body {
   -webkit-box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
   box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
   border: 1px solid rgba(10, 10, 10, 0.59);
+  overflow: auto;
 }
 
 #hauptseite {
