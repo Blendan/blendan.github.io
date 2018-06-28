@@ -24,3 +24,12 @@
   display: inline-block;
   float: left;
 }
+
+.page ul{
+  margin: 0;
+  list-style: none;
+}
+
+.page div {
+  display: inline-block;
+}
