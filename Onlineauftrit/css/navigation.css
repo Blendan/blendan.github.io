@@ -17,7 +17,8 @@ nav ul li {
  width: 60px;
  height: 60px;
  overflow: hidden;
- font-size: 30px;
+ letter-spacing: 20px;
+ font-size: 60px;
  border-radius: 10px;
  padding-left: 10px;
  -webkit-transition: all 0.3s;
@@ -32,19 +33,10 @@ nav ul li a{
   text-decoration: none;
 }
 
-nav ul li a div::first-letter {
-  letter-spacing: 20px;
-  font-size: 200%;
-}
-
 nav ul li:hover {
  width: auto;
  font-size: 60px;
+ letter-spacing: 0;
  -webkit-box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
  box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
-}
-
-nav ul li:hover a div::first-letter {
-  letter-spacing: 0;
-  font-size: 100%;
 }
