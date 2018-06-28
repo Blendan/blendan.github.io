@@ -1,0 +1,20 @@
+.page a{
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.page a:hover {
+  color: rgb(96, 96, 96);
+}
+
+.page .page_box {
+  width: 30%;
+  margin-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  border-right: 1px solid gray;
+  display: inline-block;
+  background: rgba(250, 250, 250, 0.2 );
+}
