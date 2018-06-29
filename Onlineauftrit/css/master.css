@@ -20,6 +20,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .page {
@@ -30,15 +31,16 @@ body {
   margin-left: 10%;
   padding-top: 1%;
   padding-bottom: 3%;
-  background: linear-gradient(90deg, rgb(247, 239, 205, 0.8), rgb(173, 251, 254, 0.8));
-  border-top: 2px solid rgba(10, 10, 10, 0.59);
+  background:  linear-gradient(90deg, rgb(249, 237, 185, 0.9), rgba(168, 249, 251, 0.9));
+  border-top: 2px solid gray;
   overflow: auto;
 }
 
 #hauptseite {
-  position: relative;
   width: 80%;
   margin-left: 10%;
+  overflow: hidden;
+  height: 30%;
 }
 
 .ueberschrift {
