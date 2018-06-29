@@ -12,7 +12,7 @@ html, body{
   font-family: Cabin;
 }
 
-body {
+#hauptseite {
   background-image: url("../bilder/lichtspiel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,28 +20,18 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  z-index: 1;
 }
 
 .page {
   margin: 0;
   padding: 0;
   position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+  width: 100%;
   padding-top: 1%;
   padding-bottom: 3%;
-  background: rgba(255, 255, 255, 0.7);
-  -webkit-box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
-  box-shadow: 20px 20px 0 rgba(10, 10, 10, 0.59);
-  border: 1px solid rgba(10, 10, 10, 0.59);
+  background: linear-gradient(90deg, rgb(254, 230, 129), rgb(110, 251, 255));
   overflow: auto;
-}
-
-#hauptseite {
-  background: rgba(255, 255, 255, 0.1);
+  font-size: 20px;
 }
 
 .ueberschrift {
