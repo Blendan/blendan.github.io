@@ -1,4 +1,7 @@
 
+var temp;
+var anzahl;
+
 $(document).ready(
   function()
   {
@@ -8,9 +11,10 @@ $(document).ready(
         macheSterne();
       }
     );
+
+
   }
 );
-
 
 
 function macheSterne()
@@ -19,7 +23,9 @@ function macheSterne()
 
   var sterne = '';
 
-  for (var i = 0; i < 100; i++)
+  anzahl = parseInt(document.getElementById('anzahlS').value);
+
+  for (var i = 0; i < anzahl; i++)
   {
     sterne += stern;
   }
@@ -90,4 +96,61 @@ function randomizeA()
   {
     jetzt = 0;
   }
+}
+
+function sternebewegen(event)
+{
+  var sterne = document.getElementsByClassName("sterne");
+
+  var xm = event.clientX;
+  var ym = event.clientY;
+  var temp2;
+
+
+
+  for (var i = 0; i < sterne.length; i++)
+  {
+
+    if( (parseInt($(sterne[i]).css("top"))-ym)<200&&(parseInt($(sterne[i]).css("top"))-ym>=0))
+    {
+
+      if( (parseInt($(sterne[i]).css("left"))-xm)<200&&(parseInt($(sterne[i]).css("left"))-xm>=0))
+      {
+        temp2 = parseInt($(sterne[i]).css("top"));
+        $(sterne[i]).css("top",((Math.random()*100)%200)+temp2);
+
+        temp2 = parseInt($(sterne[i]).css("left"));
+        $(sterne[i]).css("left",((Math.random()*100)%200)+temp2);
+      }
+    }
+
+    if( (parseInt($(sterne[i]).css("top"))-ym)>-200&&(parseInt($(sterne[i]).css("top"))-ym<0))
+    {
+
+      if( (parseInt($(sterne[i]).css("left"))-xm)>-200&&(parseInt($(sterne[i]).css("left"))-xm<0))
+      {
+        temp2 = parseInt($(sterne[i]).css("top"));
+        $(sterne[i]).css("top",(temp2-(Math.random()*1000)%200));
+
+        temp2 = parseInt($(sterne[i]).css("left"));
+        $(sterne[i]).css("left",(temp2-(Math.random()*1000)%200));
+      }
+    }
+  }
+}
+
+function morerandom()
+{
+  var temp2;
+  var sterne = document.getElementsByClassName("sterne");
+
+  for (var i = 0; i < sterne.length; i++)
+   {
+      temp2 = parseInt($(sterne[i]).css("top"));
+      $(sterne[i]).css("top",((((Math.random()*1000)%300)-150)+temp2));
+
+      temp2 = parseInt($(sterne[i]).css("left"));
+      $(sterne[i]).css("left",((((Math.random()*1000)%300)-150)+temp2));
+    }
+
 }
