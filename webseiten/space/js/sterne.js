@@ -79,7 +79,7 @@ function randomizeA()
 
   if(rand%3==0)
   {
-    $(sterne[jetzt]).animate({height: 'toggle' },1000);
+    $(sterne[jetzt]).animate({height: 'toggle' });
     $(sterne[jetzt]).animate({height: 'toggle' });
   }
 
