@@ -11,11 +11,8 @@ $(document).ready(
         macheSterne();
       }
     );
-
-
   }
 );
-
 
 function macheSterne()
 {
@@ -33,6 +30,15 @@ function macheSterne()
   document.getElementById("sternenhimmel").innerHTML = sterne;
 
   randomize();
+
+  $(".sterne").hover(
+    function()
+    {
+      $(this).animate({opacity: "1"});
+    }, function()
+    {
+      $(this).animate({opacity: "0.3"},1000);
+    });
 }
 
 function randomize()
@@ -79,8 +85,12 @@ function randomizeA()
 
   if(rand%3==0)
   {
-    $(sterne[jetzt]).animate({height: 'toggle' });
-    $(sterne[jetzt]).animate({height: 'toggle' });
+    $(sterne[jetzt]).animate({
+      opacity: '1'
+    });
+    $(sterne[jetzt]).animate({
+      opacity: '0.3'
+    },400);
   }
 
   jetzt++;
@@ -97,7 +107,8 @@ function sternebewegen(event)
 
   var xm = event.clientX;
   var ym = event.clientY;
-  var temp2;
+  var le;
+  var to;
 
 
 
@@ -106,44 +117,46 @@ function sternebewegen(event)
 
     if( (parseInt($(sterne[i]).css("top"))-ym)<200&&(parseInt($(sterne[i]).css("top"))-ym>=0))
     {
-
       if( (parseInt($(sterne[i]).css("left"))-xm)<200&&(parseInt($(sterne[i]).css("left"))-xm>=0))
       {
-        temp2 = parseInt($(sterne[i]).css("top"));
-        $(sterne[i]).css("top",((Math.random()*100)%200)+temp2);
-
-        temp2 = parseInt($(sterne[i]).css("left"));
-        $(sterne[i]).css("left",((Math.random()*100)%200)+temp2);
+        $(sterne[i]).animate({opacity: '1'},500);
+      }
+      else if( (parseInt($(sterne[i]).css("left"))-xm)>-200&&(parseInt($(sterne[i]).css("left"))-xm<0))
+      {
+        $(sterne[i]).animate({opacity: '1'},500);
       }
     }
-
-    if( (parseInt($(sterne[i]).css("top"))-ym)>-200&&(parseInt($(sterne[i]).css("top"))-ym<0))
+    else if( (parseInt($(sterne[i]).css("top"))-ym)>-200&&(parseInt($(sterne[i]).css("top"))-ym<0))
     {
-
-      if( (parseInt($(sterne[i]).css("left"))-xm)>-200&&(parseInt($(sterne[i]).css("left"))-xm<0))
+      if( (parseInt($(sterne[i]).css("left"))-xm)<200&&(parseInt($(sterne[i]).css("left"))-xm>=0))
       {
-        temp2 = parseInt($(sterne[i]).css("top"));
-        $(sterne[i]).css("top",(temp2-(Math.random()*1000)%200));
-
-        temp2 = parseInt($(sterne[i]).css("left"));
-        $(sterne[i]).css("left",(temp2-(Math.random()*1000)%200));
+        $(sterne[i]).animate({opacity: '1'},500);
       }
+      else if( (parseInt($(sterne[i]).css("left"))-xm)>-200&&(parseInt($(sterne[i]).css("left"))-xm<0))
+      {
+        $(sterne[i]).animate({opacity: '1'},500);
+      }
+    }
+    else
+    {
+      $(sterne[i]).animate({opacity: '0.3'},200);
     }
   }
 }
 
 function morerandom()
 {
-  var temp2;
   var sterne = document.getElementsByClassName("sterne");
-
+  var random1;
+  var random2;
   for (var i = 0; i < sterne.length; i++)
    {
-      temp2 = parseInt($(sterne[i]).css("top"));
-      $(sterne[i]).css("top",((((Math.random()*1000)%300)-150)+temp2));
+     random1 = ((Math.random()*1000)%300)-150;
+     random2 = ((Math.random()*1000)%300)-150;
 
-      temp2 = parseInt($(sterne[i]).css("left"));
-      $(sterne[i]).css("left",((((Math.random()*1000)%300)-150)+temp2));
+      $(sterne[i]).animate({
+        top: '+='+random1,
+        left: '+='+random2
+      },600)
     }
-
 }
