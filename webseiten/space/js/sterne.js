@@ -77,17 +77,10 @@ function randomizeA()
 
   rand = Math.round((Math.random()*100)%40)+10;
 
-  if(rand%15==0)
+  if(rand%3==0)
   {
-    if(rand%2==0)
-    {
-      sterne[jetzt].style.transform = "rotate("+(Math.random()*1000)%360+"deg)";
-    }
-    else
-    {
-      $(sterne[jetzt]).css("width",rand);
-      $(sterne[jetzt]).css("height",rand);
-    }
+    $(sterne[jetzt]).animate({height: 'toggle' },1000);
+    $(sterne[jetzt]).animate({height: 'toggle' });
   }
 
   jetzt++;
