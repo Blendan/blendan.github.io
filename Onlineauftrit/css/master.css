@@ -34,6 +34,7 @@ body {
   background:  linear-gradient(90deg, rgb(249, 237, 185, 0.9), rgba(168, 249, 251, 0.9));
   border-top: 2px solid gray;
   overflow: auto;
+  text-align: center;
 }
 
 #hauptseite {
@@ -49,4 +50,14 @@ body {
   text-decoration: underline;
   font-size: 50px;
   padding-top: 30px;
+}
+
+footer {
+  background: rgba(83, 83, 83, 1);
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 2px solid black;
+  color: white;
 }
