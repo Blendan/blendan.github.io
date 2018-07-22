@@ -1,0 +1,34 @@
+.page a{
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.page a:hover {
+  color: rgb(96, 96, 96);
+}
+
+.page .page_box {
+  width: 30%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  float: left;
+}
+
+.page .page_box_line {
+  border-right: 1px solid gray;
+  height: 200px;
+  display: inline-block;
+  float: left;
+}
+
+.page ul{
+  margin: 0;
+  list-style: none;
+}
+
+.page div {
+  display: inline-block;
+}
