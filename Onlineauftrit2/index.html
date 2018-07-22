@@ -2,49 +2,42 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> </title>
+    <title></title>
     <link rel="stylesheet" href="css/master.css" media="(orientation: landscape)">
-    <link rel="stylesheet" href="css/haupt.css" media="(orientation: landscape)">
-    <link rel="stylesheet" href="css/page.css" media="(orientation: landscape)">
-    <link rel="stylesheet" href="css/navigation.css" media="(orientation: landscape)">
-
     <link rel="stylesheet" href="css_mobil/master.css" media="(orientation: portrait)">
-    <link rel="stylesheet" href="css_mobil/haupt.css" media="(orientation: portrait)">
-    <link rel="stylesheet" href="css_mobil/page.css" media="(orientation: portrait)">
-    <link rel="stylesheet" href="css_mobil/navigation.css" media="(orientation: portrait)">
+    <link rel="stylesheet" href="css/schriftarten.css">
 
-    <script src="js/jquery-3.3.1.js" media></script>
-    <script src="js/master.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/jquery-3.3.1.js" ></script>
+    <script src="js/master.js" media="(orientation: landscape)"></script>
   </head>
   <body>
+    <div id="Background"></div>
+
     <div id="hauptseite">
-      <h1 id="haupt_ueberschrift">Willkommen</h1>
-      <h1 id="haupt_ueberschrift" class="rightUeberschrift">Philipp Hägerich</h1>
+      <div id="haupt_ueberschrift_box">
+        <h1 class="haupt_ueberschrift">Willkommen</h1>
+        <h1 class="haupt_ueberschrift rotadeHidden">Mein Name ist</h1>
+        <h1 class="haupt_ueberschrift rotadeHidden">Philipp Hägerich</h1>
+      </div>
 
       <ul>
-        <li><a href="#uebermich" class="nav">Über mich</a></li>
-        <li><a href="#kontakt" class="nav">Kontakt</a></li>
+        <li><a href="#uebermich">Über mich<img src="bilder/arrowdown2_black.svg"></a></li>
+        <li><a href="#kontakt">Kontakt<img src="bilder/arrowdown2_black.svg"></a></li>
       </ul>
     </div>
 
     <div id="uebermich" class="page">
       <h1 class="ueberschrift">Über mich</h1>
-        <div class="page_box">
+
           <h2>Persönliches:</h2>
           <p>Mein Wohnort ist Wiesentheid und ich bin 18 Jahre Alt.</p>
-        </div>
-        <div class="page_box_line"></div>
-        <div class="page_box">
+
           <h2>Hobbys:</h2>
           <p>Zu meine Hobbys zählt das Arbeitenmit Blender 3D, Programmiren, Musik, basteln mit PC's und gelegentliches Video Spielen.</p>
-        </div>
-        <div class="page_box_line"></div>
-        <div class="page_box">
+
           <h2>Ausbildung:</h2>
           <p>Ich bin ein angehender Fachinformatiker im ersten Lehrjahr.</p>
           <p>Meine Reinschulische Ausbildung habe ich im <a href="#">Beruflichen Sulungszentrum für Wirtschaft und Datenverarbeitung</a></p>
-        </div>
     </div>
 
     <div id="kontakt" class="page">

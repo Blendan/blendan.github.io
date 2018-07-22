@@ -23,6 +23,15 @@ body {
   z-index: 1;
 }
 
+#Background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#F8B195,#F67280,#C06C84,#6C5B7B,#355C7D);
+  z-index: -1;
+}
 .page {
   margin: 0;
   padding: 0;
@@ -30,8 +39,6 @@ body {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 3%;
-  background:  linear-gradient(90deg, rgb(249, 237, 185, 0.9), rgba(168, 249, 251, 0.9));
-  border-top: 2px solid gray;
   overflow: auto;
   text-align: center;
 }
@@ -40,7 +47,74 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.64);
+  text-align: center;
+}
+
+#hauptseite #haupt_ueberschrift_box {
+  position: relative;
+  margin-top: 20%;
+  left: 30%;
+  height: 140px;
+  width: 40%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+
+#hauptseite .haupt_ueberschrift {
+  position: absolute;
+  top: 26px;
+  font-size: 70px;
+  margin: 0;
+}
+
+#hauptseite ul {
+  list-style: none;
+  margin-top: 10%;
+}
+
+#hauptseite ul li{
+  float: left;
+  width: 45%;
+  font-size: 30px;
+}
+
+#hauptseite ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+#hauptseite ul li a img{
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#hauptseite ul li a:hover img{
+  margin-top: 0px;
+}
+
+.rotateIN {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  transform:rotateX(0deg) translateZ(90px);
+}
+
+.rotateOut {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  transform:rotateX(-90deg) translateZ(90px);
+}
+
+.rotadeHidden {
+  transform: rotateX(90deg) translateZ(90px);
 }
 
 .ueberschrift {
@@ -52,10 +126,12 @@ body {
 }
 
 footer {
-  background: rgba(83, 83, 83, 1);
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   padding-top: 1%;
   padding-bottom: 1%;
   border-top: 2px solid black;
   color: white;
+  text-align: center;
+  z-index: 10;
 }
