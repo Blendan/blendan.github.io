@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 25px;
+  scroll-behavior: smooth;
 }
 
 hr {
@@ -14,14 +15,32 @@ hr {
 .page {
   margin: 0;
   padding: 0;
-  width: 95%;
-  margin-left: 2.5%;
-  overflow: auto;
+}
+
+.weite {
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .page{
+    overflow: auto;
+    -webkit-box-shadow: 0 0 20px black;
+    -moz-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+  }
+
+  .weite {
+    width: 92.5%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    margin-left: 2.5%;
+  }
 }
 
 .page h1 {
   text-align: center;
   padding: 1%;
+  width: auto;
 }
 
 .page p {
@@ -39,7 +58,7 @@ hr {
   height: 70%;
   overflow: hidden;
 
-  margin-top: 2.5%;
+  margin-top: 100px;
 }
 
 #home h1 {
@@ -49,9 +68,11 @@ hr {
   padding-top: 1%;
   padding-bottom: 1%;
   margin: 0;
+  left: 0;
   top: 36%;
 
   background: white;
+  border: none;
 }
 
 #ueberuns #img_team {
