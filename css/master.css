@@ -140,16 +140,16 @@ nav ul li a:hover {
 }
 
 #webseiten .auswahl {
-  height: 300px;
   display: none;
   border-bottom: 2px solid white;
+  overflow: auto;
 }
 
 #webseiten {
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #webseiten .karachel {

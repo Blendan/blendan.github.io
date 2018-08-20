@@ -132,17 +132,16 @@ nav ul li a:hover {
 }
 
 #webseiten .auswahl {
-  height: 400px;
   display: none;
   border-bottom: 2px solid white;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #webseiten {
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #webseiten .karachel {
@@ -155,6 +154,8 @@ nav ul li a:hover {
   transition: all 0.3s;
   background: black;
   margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
