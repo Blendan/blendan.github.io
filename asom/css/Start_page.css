@@ -1,0 +1,41 @@
+#Start_Page {
+  height: 100%;
+  width: 100%;
+}
+
+#Start_Page #start_BTN {
+  position: absolute;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  color: white;
+  font-size: 7vw;
+  text-shadow: 5px 5px 0 black;
+  border: none;
+  width: 45vw;
+  height: 9vw;
+  border-radius: 4.5vw;
+  margin-left: 27.25vw;
+  margin-top: 30vh;
+  background-size: 400%;
+  animation: start_BTN_animation 8s linear infinite;
+}
+
+#Start_Page #start_BTN:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  width: 45vw;
+  height: 9vw;
+  filter: blur(50px);
+  border-radius: 4.5vw;
+  background-size: 400%;
+  transition: 1s;
+  animation: start_BTN_animation 8s linear infinite;
+}
+
+@keyframes start_BTN_animation {
+  0% {background-position: 0%;}
+  100% {background-position: 400%;}
+}
