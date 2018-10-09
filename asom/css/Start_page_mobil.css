@@ -26,12 +26,11 @@
   left: 0;
   z-index: -1;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-  width: 45vw;
-  height: 9vw;
+  width: 90vw;
+  height: 23vw;
   filter: blur(50px);
   border-radius: 4.5vw;
   background-size: 400%;
-  transition: 1s;
   animation: start_BTN_animation 8s linear infinite;
 }
 

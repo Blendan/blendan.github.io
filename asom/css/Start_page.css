@@ -31,7 +31,6 @@
   filter: blur(50px);
   border-radius: 4.5vw;
   background-size: 400%;
-  transition: 1s;
   animation: start_BTN_animation 8s linear infinite;
 }
 
