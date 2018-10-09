@@ -21,7 +21,7 @@ function tippenAnimaton()
   }
   else
   {
-    text_haupt = "Philipp Hägerich";
+    text_haupt = "Name";
     name_text = true;
   }
   stelle_text = 0;
