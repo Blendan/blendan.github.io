@@ -152,6 +152,7 @@ nav ul li a:hover {
   width: 100%;
   overflow: auto;
   margin-bottom: 10%;
+  padding-bottom: 30px;
   padding-top: 1%;
 }
 
