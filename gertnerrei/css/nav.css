@@ -34,7 +34,7 @@ nav ul li a:hover {
   color: gray;
 }
 
-nav ul .akt_menu {
+nav .akt_menu {
   display: none;
 }
 
@@ -48,14 +48,35 @@ nav ul .akt_menu {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    overflow: hidden;
+  }
+
+  nav #navigation {
+    margin: 0;
+    padding: 0;
+    display: none;
+    height: 40%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  nav #akt_menue_deakt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: -1;
   }
 
   nav ul li {
-    width: 40%;
+    width: 100%;
     float: none;
-    display: none;
     padding: 5px;
     margin: 0;
+    position: relative;
+    left: 0;
     border-top: 3px solid gray;
     background: rgb(232, 232, 232);
   }
@@ -63,18 +84,11 @@ nav ul .akt_menu {
     font-size: 60px;
   }
 
-  nav ul .akt_menu {
+  nav  .akt_menu {
     display: block;
     background: none;
     border: none;
-  }
-
-  nav ul .akt_menu img{
-    width: 100px;
-    height: 100px;
-  }
-
-  nav ul:focus li, nav ul:hover li {
-    display: block;
+    width: 20vw;
+    height: 20vw;
   }
 }

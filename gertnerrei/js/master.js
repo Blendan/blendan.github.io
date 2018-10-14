@@ -1,0 +1,31 @@
+$(document).ready(
+  function()
+  {
+    $(".akt_menu").click(
+      function()
+      {
+        $("#navigation").toggle();
+        $(".akt_menu").toggle();
+        $("#akt_menue_deakt").toggle();
+      }
+    );
+
+    $("#akt_menue_deakt").click(
+      function()
+      {
+        $("#navigation").toggle();
+        $(".akt_menu").toggle();
+        $("#akt_menue_deakt").toggle();
+      }
+    );
+
+    $("#navigation").click(
+      function()
+      {
+        $("#navigation").toggle();
+        $(".akt_menu").toggle();
+        $("#akt_menue_deakt").toggle();
+      }
+    );
+  }
+);
