@@ -1,9 +1,8 @@
 nav {
   position: fixed;
-  width: 100%;
-  top: 0;
+  top: 2px;
   z-index: 100;
-  background: white;
+  background: rgb(232, 232, 232);
   border-top: 3px solid gray;
   height: auto;
   -webkit-box-shadow: 0 0 20px black;
