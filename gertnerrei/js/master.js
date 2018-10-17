@@ -4,7 +4,7 @@ $(document).ready(
     $(".akt_menu").click(
       function()
       {
-        $("#navigation").toggle();
+        $("#navigation").toggleClass("hideNavigation");
         $(".akt_menu").toggle();
         $("#akt_menue_deakt").toggle();
       }
@@ -13,7 +13,7 @@ $(document).ready(
     $("#akt_menue_deakt").click(
       function()
       {
-        $("#navigation").toggle();
+        $("#navigation").toggleClass("hideNavigation");
         $(".akt_menu").toggle();
         $("#akt_menue_deakt").toggle();
       }
