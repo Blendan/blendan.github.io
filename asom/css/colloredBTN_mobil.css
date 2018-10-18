@@ -1,9 +1,4 @@
-#Start_Page {
-  height: 100%;
-  width: 100%;
-}
-
-#Start_Page #start_BTN {
+.colloredBTN {
   position: absolute;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   color: white;
@@ -19,7 +14,7 @@
   animation: start_BTN_animation 8s linear infinite;
 }
 
-#Start_Page #start_BTN:before {
+.colloredBTN:before {
   content: '';
   position: absolute;
   top: 0;
