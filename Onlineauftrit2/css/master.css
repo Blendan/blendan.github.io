@@ -10,6 +10,13 @@ html,body {
   padding: 0;
   scroll-behavior: smooth;
   font-family: Cabin;
+  font-size: 20px;
+}
+
+@media (orientation: portrait) {
+  body {
+    font-size: 4vw;
+  }
 }
 
 #Background {
@@ -48,7 +55,6 @@ html,body {
 }
 
 #hauptseite {
-  height: 90%;
   padding: 0;
   overflow: hidden;
 }
@@ -57,7 +63,7 @@ html,body {
   position: relative;
   margin-top: 10%;
   left: 10%;
-  height: 140px;
+  height: 13vw;
   width: 80%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -66,9 +72,10 @@ html,body {
 
 #hauptseite .haupt_ueberschrift {
   position: absolute;
-  top: 26px;
-  font-size: 70px;
+  top: 1vw;
+  font-size: 9vw;
   margin: 0;
+  padding: 0;
 }
 
 #hauptseite ul {
