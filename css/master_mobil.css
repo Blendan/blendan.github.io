@@ -25,7 +25,7 @@ a:hover {
 
 p {
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
   padding-top: 5%;
   width: 65%;
   margin-left: 17.5%;
@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 #Frontseite {
-  height: 100%;
+  height: 120vw;
   width: 100%;
   background-image: url("../bilder/fokuserde.png");
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 
 #Frontseite #hauptueberischrift {
-  padding-top: 50%;
+  padding-top: 35vw;
 }
 
 .ueberschrift {
