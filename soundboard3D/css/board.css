@@ -1,0 +1,48 @@
+.soundboard3d  {
+  position: absolute;
+  left: 35vw;
+  top: 30%;
+}
+
+
+.soundboard3d .board {
+  width: 30vw;
+  height: 30vw;
+  background: coral;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.soundboard3d .board .boardBtn {
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin: 2.5%;
+}
+
+.soundboard3d .board .boardBtn .boardBtnTop {
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(-90deg)  translateZ(1vw);
+  background: gray;
+}
+
+.soundboard3d .board .boardBtn .boardBtnSide {
+  width: 100%;
+  height: 0.5vw;
+  background: lightgrey;
+}
+
+
+.soundboard3d .board-left {
+  transform: rotateX(-45deg) rotateY(-45deg) translateZ(15vw) ;
+}
+
+.soundboard3d .board-right {
+  transform: rotateX(-45deg) rotateY(45deg) translateZ(15vw) ;
+}
+
+.soundboard3d .board-center {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(15vw);
+}

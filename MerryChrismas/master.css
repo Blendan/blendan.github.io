@@ -1,0 +1,83 @@
+html,body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(46, 47, 77);
+  z-index: -2;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("bilder/background_start.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+
+h1 {
+  color: white;
+  text-decoration: underline  double;
+  text-align: center;
+  font-size: 12vw;
+  font-family: 'Lobster';
+  margin: 10px;
+  z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text {
+  margin-top: 5%;
+  border: 1vw white solid;
+  width: 80vw;
+  margin-left: 7.75vw;
+  padding: 2.5vw;
+}
+
+
+.snowbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  overflow: visible;
+}
+
+.snowbox div {
+  position: fixed;
+  top: -200px;
+  background-image: url("bilder/snow.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes fall
+{
+  0%
+  {
+    top: -200px;
+  }
+  100%
+  {
+    top: 150%;
+    transform: rotate(600deg);
+  }
+}
