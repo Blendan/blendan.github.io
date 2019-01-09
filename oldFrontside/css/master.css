@@ -28,6 +28,10 @@ a {
   transition: all 0.3s;
 }
 
+a:hover {
+  color: rgb(152, 152, 152);
+}
+
 p {
   color: white;
   font-size: 23px;
@@ -55,7 +59,6 @@ nav {
   background: rgba(85, 85, 85, 0.62);
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  z-index: 1;
 }
 
 nav ul {
@@ -69,7 +72,7 @@ nav ul li {
   float: left;
   margin-right: 2%;
   margin-top: 0;
-  font-size: 30px;
+  font-size: 4vh;
 }
 
 nav ul li a {
@@ -92,7 +95,6 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
-  z-index: 0;
 }
 
 #Frontseite h1 {
