@@ -9,6 +9,10 @@ html, body{
 }
 
 hintergrund {
+  display: none;
+}
+
+hintergrund-mobil {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -16,7 +20,6 @@ hintergrund {
   left: 0;
   background-image: url("../bilder/background.png");
   background-position: center;
-  background-size: cover;
   z-index: -1;
 }
 
