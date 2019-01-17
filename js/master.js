@@ -8,8 +8,7 @@ $( document ).ready(
           {
             var wScroll = $(window).scrollTop();
 
-            $('#Frontseite').css('background-position', 'center ' + (wScroll*0.5) + 'px');
-            $('#Frontseite').css('filter', 'blur( ' + (wScroll*0.005) + 'px)');
+            $('hintergrund').css('background-position', 'center ' + (wScroll*-0.1) + 'px');
         }
       );
     }

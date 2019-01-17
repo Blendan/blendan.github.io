@@ -3,7 +3,6 @@ html, body{
   height: 100%;
   padding: 0;
   margin: 0;
-  background: black;
   color: white;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
@@ -15,10 +14,9 @@ hintergrund {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("../bilder/erde_halb.png"), url("../bilder/mond_halb.png");
-  background-repeat: no-repeat;
-  background-position: left, right;
-  background-size: auto 100%;
+  background-image: url("../bilder/background.png");
+  background-position: center;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -52,7 +50,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(85, 85, 85, 0.62);
+  background: rgba(0, 0, 0, 0.62);
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   z-index: 1;
@@ -88,10 +86,7 @@ nav ul li a:hover {
 #Frontseite {
   height: 100%;
   width: 100%;
-  background-image: url("../bilder/fokuserde.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
   z-index: 0;
 }
 
@@ -179,7 +174,7 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 50px;
-  background: black;
+  background: rgba(0, 0, 0, 0.68);
   margin: 0;
   padding: 0;
   padding-bottom: 100px;

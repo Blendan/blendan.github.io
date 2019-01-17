@@ -3,14 +3,21 @@ html, body{
   height: 100%;
   padding: 0;
   margin: 0;
-  background: black;
   color: white;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
 }
 
 hintergrund {
-  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("../bilder/background.png");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 a {
@@ -84,10 +91,7 @@ nav ul li a:hover {
 #Frontseite {
   height: 120vw;
   width: 100%;
-  background-image: url("../bilder/fokuserde.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
 }
 
 #Frontseite h1 {
