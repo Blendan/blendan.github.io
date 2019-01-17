@@ -3,7 +3,7 @@
 $( document ).ready(
     function()
     {
-      $('hintergrund').css('background-position', 'center ' + (wScroll*-0.1) + 'px');
+      $('hintergrund').css('background-position', 'center ' + ($(window).scrollTop()*-0.1) + 'px');
       $(window).scroll(
           function()
           {
