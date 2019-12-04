@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lonely planet</title>
+	<link rel="stylesheet" href="index.css">
+	<script
+			crossorigin="anonymous"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+	<div id="stars"></div>
+
+	<div id="planet">
+		<div id="landmass">
+		</div>
+	</div>
+
+	<div class="astride">
+		<div class="core"></div>
+		<div class="fire"></div>
+	</div>
+	<script>
+        for (let i = 0; i < 9; i ++)
+        {
+            $("#landmass").append("<div class='land' style='margin-left: "+(randomIntFromInterval(0,100)-50)+"%; width: "+randomIntFromInterval(6,30)+"vmin;'></div>");
+        }
+
+		for (let i = 0; i < 100; i ++)
+		{
+		    $("#stars").append(
+		        "<div class='star' style='transform: rotate("+randomIntFromInterval(0,360)+"deg)'>" +
+				"<div class='stripe-1'></div>" +
+				"<div class='stripe-2'></div>" +
+				"</div>"
+			);
+		}
+
+        function randomIntFromInterval(min, max)
+        {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+	</script>
+</body>
+</html>

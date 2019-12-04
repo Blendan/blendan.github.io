@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Endless Cube</title>
+	<script
+			crossorigin="anonymous"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="index.js"></script>
+	<style>
+		html, body {
+			background: #000000 url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23575757' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+			overflow: hidden;
+		}
+		#box {
+			width: 80vmin;
+			height: 80vmin;
+			background: none;
+			padding: 0;
+			margin: 0 auto;
+			font-size: 0;
+			border-radius: 100%;
+			overflow: hidden;
+			transform: rotate(40deg);
+		}
+
+		/*noinspection CssUnusedSymbol*/
+		.sub-box {
+			background: orange;
+			width: 50%;
+			height: 50%;
+			display: inline-flex;
+			padding: 0;
+			margin: 0;
+			transition: all 0.1s;
+		}
+	</style>
+</head>
+<body>
+<button id="stop-start">Stop/Start</button>
+<div id="box"></div>
+</body>
+</html>
