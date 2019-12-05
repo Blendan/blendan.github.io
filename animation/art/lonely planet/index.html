@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lonely planet</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="../jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div id="stars"></div>
+
+<div class="astride">
+	<div class="core"></div>
+	<div class="fire"></div>
+</div>
+
+<div id="planet">
+	<div id="landmass"></div>
+	<div id="landmass-2"></div>
+	<div id="shadow"></div>
+</div>
+
+
+<!--suppress JSJQueryEfficiency -->
+<script>
+    for (let i = 0; i < 8; i++)
+    {
+        $("#landmass").append("<div class='land' style='margin-left: " + (randomIntFromInterval(0, 100) - 50) + "%; width: " + randomIntFromInterval(6, 30) + "vmin;'></div>");
+    }
+
+    $("#landmass-2").html($("#landmass").html());
+
+    for (let i = 0; i < 100; i++)
+    {
+        const size = randomFromInterval(0.5, 1.25);
+        $("#stars").append(
+            "<div class='star' style='transform: rotate(" + randomIntFromInterval(0, 360) + "deg); top: " + randomIntFromInterval(0, 100) + "%; left: " + randomIntFromInterval(0, 100) + "%; height: " + size + "vmin; width: " + size + "vmin'>" +
+            "<div class='stripe-1'></div>" +
+            "<div class='stripe-2'></div>" +
+            "</div>"
+        );
+    }
+
+    glareRandomStar();
+
+    function glareRandomStar()
+    {
+        const stars = $(".star");
+        const random = randomIntFromInterval(0,stars.length-1);
+        stars.eq(random).animate(
+            {opacity: "1"}, 500,
+            function ()
+            {
+                stars.eq(random).animate(
+                    {opacity: "0.5"}, 1000,
+                    function ()
+                    {
+                        glareRandomStar();
+                    }
+                )
+            }
+        )
+
+    }
+
+    function randomIntFromInterval(min, max)
+    {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    function randomFromInterval(min, max)
+    {
+        return Math.random() * (max - min + 1) + min;
+    }
+</script>
+</body>
+</html>

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90e131df-f9d0-4d66-ab6f-7be8cdd79462" name="Default Changelist" comment="" />
+    <list default="true" id="cd5f05c0-07a3-4c7b-b21f-484ff93e53b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/art.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/art.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/lonly planet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonly planet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +30,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1UTEGyh6qq5SmeW5yi3yBPDnCQ1" />
+  <component name="ProjectId" id="1UYUbjcv5N6VaRdCGgwh1sc3O0K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,20 +60,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="90e131df-f9d0-4d66-ab6f-7be8cdd79462" name="Default Changelist" comment="" />
-      <created>1575372092120</created>
+      <changelist id="cd5f05c0-07a3-4c7b-b21f-484ff93e53b5" name="Default Changelist" comment="" />
+      <created>1575533097765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575372092120</updated>
-      <workItem from="1575372094116" duration="54000" />
-      <workItem from="1575372242384" duration="4818000" />
-      <workItem from="1575456846309" duration="41000" />
-      <workItem from="1575458627575" duration="64000" />
-      <workItem from="1575487738663" duration="8000" />
-      <workItem from="1575487757020" duration="1000" />
-      <workItem from="1575487793580" duration="26000" />
-      <workItem from="1575487831721" duration="18000" />
-      <workItem from="1575487870706" duration="9000" />
+      <updated>1575533097765</updated>
+      <workItem from="1575533103562" duration="2324000" />
     </task>
     <servers />
   </component>
@@ -73,17 +77,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/../.." />
-    </ignored-roots>
+    <MESSAGE value="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)" />
   </component>
 </project>

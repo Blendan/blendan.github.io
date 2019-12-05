@@ -25,6 +25,10 @@ html, body {
     background: green;
 }
 
+#landmass .land:first-child, #landmass  .land:last-child, #landmass-2  .land:first-child, #landmass-2  .land:last-child {
+    background: aliceblue;
+}
+
 .astride {
     top: 70%;
     left: 60%;
@@ -101,14 +105,42 @@ html, body {
     background: aliceblue;
 }
 
-#landmass-2 {
+#shadow {
+    width: 40vmin;
+    height: 40vmin;
+    background: rgba(0, 0, 0, 0.28);
     position: absolute;
-    left: 150%;
     top: 0;
+    left: 150%;
+    border-radius: 50%;
+    animation: shadowMovement linear infinite 100s;
+}
+
+@keyframes shadowMovement {
+    0% {left: 150%;}
+    100% {left: -150%;}
 }
 
 #landmass {
     position: absolute;
     left: 0;
     top: 0;
+    animation: landmass-1Movement linear infinite 15s;
+}
+
+#landmass-2 {
+    position: absolute;
+    left: 150%;
+    top: 0;
+    animation: landmass-2Movement linear infinite 15s;
+}
+
+@keyframes landmass-1Movement {
+    0% {left: 0;}
+    100% {left: -150%;}
+}
+
+@keyframes landmass-2Movement {
+    0% {left: 150%;}
+    100% {left: 0;}
 }
