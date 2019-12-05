@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5f05c0-07a3-4c7b-b21f-484ff93e53b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jquery-3.4.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/art.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/art.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/lonly planet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonly planet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonely planet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonely planet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575533097765</updated>
-      <workItem from="1575533103562" duration="2324000" />
+      <workItem from="1575533103562" duration="4055000" />
     </task>
+    <task id="LOCAL-00001" summary="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)">
+      <created>1575535459333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575535459333</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

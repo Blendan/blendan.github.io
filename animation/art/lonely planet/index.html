@@ -17,6 +17,7 @@
 <div id="planet">
 	<div id="landmass"></div>
 	<div id="landmass-2"></div>
+	<div id="clouds"></div>
 	<div id="shadow"></div>
 </div>
 
@@ -27,8 +28,9 @@
     {
         $("#landmass").append("<div class='land' style='margin-left: " + (randomIntFromInterval(0, 100) - 50) + "%; width: " + randomIntFromInterval(6, 30) + "vmin;'></div>");
     }
-
     $("#landmass-2").html($("#landmass").html());
+
+
 
     for (let i = 0; i < 100; i++)
     {
@@ -39,6 +41,29 @@
             "<div class='stripe-2'></div>" +
             "</div>"
         );
+    }
+
+    randomClouds();
+    function randomClouds()
+    {
+        $("#clouds").html("");
+        for (let i = 0; i < 8; i++)
+        {
+            $("#clouds").append("<span class='cloud' style='margin-left: " + (randomIntFromInterval(0, 130) - 50) + "%; width: " + randomIntFromInterval(6, 20) + "vmin;'></span>");
+            $("#clouds").append("<sapn class='cloud' style='margin-left: " + (randomIntFromInterval(0, 40)) + "%; width: " + randomIntFromInterval(6, 20) + "vmin;'></sapn>");
+            $("#clouds").append("<br>");
+        }
+
+        $("#clouds").css("left","-160%");
+        $("#clouds").animate(
+			{left: "160%"},
+			50000,
+            'linear',
+			function ()
+            {
+				randomClouds();
+            }
+		);
     }
 
     glareRandomStar();

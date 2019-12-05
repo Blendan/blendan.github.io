@@ -18,17 +18,6 @@ html, body {
     z-index: 10;
 }
 
-.land {
-    height: 5vmin;
-    width: 25vmin;
-    border-radius: 5vmin;
-    background: green;
-}
-
-#landmass .land:first-child, #landmass  .land:last-child, #landmass-2  .land:first-child, #landmass-2  .land:last-child {
-    background: aliceblue;
-}
-
 .astride {
     top: 70%;
     left: 60%;
@@ -144,3 +133,35 @@ html, body {
     0% {left: 150%;}
     100% {left: 0;}
 }
+
+.land {
+    height: 5vmin;
+    width: 25vmin;
+    border-radius: 5vmin;
+    background: green;
+}
+
+#landmass .land:first-child, #landmass  .land:last-child, #landmass-2  .land:first-child, #landmass-2  .land:last-child {
+    background: aliceblue;
+}
+
+#clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+}
+
+#clouds .cloud {
+    height: 5vmin;
+    width: 25vmin;
+    border-radius: 5vmin;
+    background: rgba(255, 255, 255, 0.35);
+    display: inline-block;
+}
+
+#clouds br {
+    height: 0;
+    font-size: 0;
+}
+
