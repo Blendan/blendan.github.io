@@ -43,10 +43,18 @@ html, body {
 }
 
 @keyframes asteroidGlare {
-    0% {box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);}
-    35% {box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);}
-    50% {box-shadow: 0 0 0 3vmin rgba(255, 60, 0, 0.2);}
-    100% {box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);}
+    0% {
+        box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);
+    }
+    35% {
+        box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 0 3vmin rgba(255, 60, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 2vmin rgba(255, 60, 0, 0.2);
+    }
 }
 
 .astride .fire {
@@ -94,9 +102,9 @@ html, body {
     background: aliceblue;
 }
 
-#shadow {
-    width: 40vmin;
-    height: 40vmin;
+.shadow {
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.28);
     position: absolute;
     top: 0;
@@ -106,8 +114,12 @@ html, body {
 }
 
 @keyframes shadowMovement {
-    0% {left: 150%;}
-    100% {left: -150%;}
+    0% {
+        left: 150%;
+    }
+    100% {
+        left: -150%;
+    }
 }
 
 #landmass {
@@ -125,13 +137,21 @@ html, body {
 }
 
 @keyframes landmass-1Movement {
-    0% {left: 0;}
-    100% {left: -150%;}
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -150%;
+    }
 }
 
 @keyframes landmass-2Movement {
-    0% {left: 150%;}
-    100% {left: 0;}
+    0% {
+        left: 150%;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 .land {
@@ -141,7 +161,7 @@ html, body {
     background: green;
 }
 
-#landmass .land:first-child, #landmass  .land:last-child, #landmass-2  .land:first-child, #landmass-2  .land:last-child {
+#landmass .land:first-child, #landmass .land:last-child, #landmass-2 .land:first-child, #landmass-2 .land:last-child {
     background: aliceblue;
 }
 
@@ -163,5 +183,63 @@ html, body {
 #clouds br {
     height: 0;
     font-size: 0;
+}
+
+.moon {
+    overflow: hidden;
+    width: 20vmin;
+    height: 20vmin;
+    background: gray;
+    border-radius: 100%;
+    position: absolute;
+    top: 70vmin;
+    left: 20%;
+    z-index: 0;
+    font-size: 0;
+    box-shadow: 0 0 0 1vmin rgba(128, 128, 128, 0.50);
+    animation: moonAnimation ease-in-out infinite 10s;
+}
+
+@keyframes moonAnimation {
+    0% {
+        top: 70vmin;
+        left: 20%;
+        z-index: 0;
+    }
+    50% {
+        top: 5vmin;
+        left: 70%;
+        z-index: 0;
+    }
+    51% {
+        z-index: 20;
+    }
+    100% {
+        top: 70vmin;
+        left: 20%;
+        z-index: 20;
+    }
+}
+
+.moon .landmass {
+    width: 150%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: landmass-1Movement linear infinite 10s;
+}
+
+.moon .landmass-2 {
+    width: 150%;
+    position: absolute;
+    left: 150%;
+    top: 0;
+    animation: landmass-2Movement linear infinite 10s;
+}
+
+.moon-crater {
+    background: #646464;
+    border-radius: 100%;
+    display: inline-block;
 }
 

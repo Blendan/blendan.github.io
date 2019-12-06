@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5f05c0-07a3-4c7b-b21f-484ff93e53b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/meinp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lonely planet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lonely planet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +56,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575533097765</updated>
-      <workItem from="1575533103562" duration="5192000" />
+      <workItem from="1575533103562" duration="5914000" />
+      <workItem from="1575540068138" duration="362000" />
+      <workItem from="1575619887744" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)">
       <created>1575535459333</created>
@@ -72,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575537328381</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some code cleanup">
+      <created>1575538846564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575538846564</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -92,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)" />
     <MESSAGE value="added clouds" />
-    <option name="LAST_COMMIT_MESSAGE" value="added clouds" />
+    <MESSAGE value="some code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="some code cleanup" />
   </component>
 </project>

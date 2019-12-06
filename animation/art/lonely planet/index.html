@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>lonely planet</title>
-	<link rel="stylesheet" href="index.css">
+	<link href="index.css" rel="stylesheet">
 	<script src="../jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -19,7 +19,13 @@
 	<div id="landmass"></div>
 	<div id="landmass-2"></div>
 	<div id="clouds"></div>
-	<div id="shadow"></div>
+	<div class="shadow"></div>
+</div>
+
+<div class="moon">
+	<div class="landmass"></div>
+	<div class="landmass-2"></div>
+	<div class="shadow" style="background: rgba(0,0,0,0.7);"></div>
 </div>
 
 
@@ -31,7 +37,16 @@
     }
     $("#landmass-2").html($("#landmass").html());
 
-
+    for (let i = 0; i < 10; i++)
+    {
+        for (let j = 0; j < 5; j++)
+        {
+            const size = randomFromInterval(0.3, 2);
+            $(".moon .landmass").append("<div class='moon-crater' style='margin-left: " + (randomIntFromInterval(0, 30)) + "%; width: " + size + "vmin; height: " + size + "vmin;'></div>");
+        }
+        $(".moon .landmass").append("<br>");
+    }
+    $(".moon .landmass-2").html($(".moon .landmass").html());
 
     for (let i = 0; i < 100; i++)
     {
@@ -45,6 +60,7 @@
     }
 
     randomClouds();
+
     function randomClouds()
     {
         $("#clouds").html("");
@@ -55,17 +71,17 @@
             $("#clouds").append("<br>");
         }
 
-        $("#clouds").css("left","-160%");
+        $("#clouds").css("left", "-160%");
         // noinspection JSCheckFunctionSignatures
         $("#clouds").animate(
-			{left: "160%"},
-			50000,
+            {left: "160%"},
+            50000,
             'linear',
-			function ()
+            function ()
             {
-				randomClouds();
+                randomClouds();
             }
-		);
+        );
     }
 
     glareRandomStar();
@@ -73,7 +89,7 @@
     function glareRandomStar()
     {
         const stars = $(".star");
-        const random = randomIntFromInterval(0,stars.length-1);
+        const random = randomIntFromInterval(0, stars.length - 1);
         stars.eq(random).animate(
             {opacity: "1"}, 500,
             function ()
