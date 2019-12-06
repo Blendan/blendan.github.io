@@ -115,10 +115,10 @@ html, body {
 
 @keyframes shadowMovement {
     0% {
-        left: 150%;
+        left: 100%;
     }
     100% {
-        left: -150%;
+        left: -110%;
     }
 }
 

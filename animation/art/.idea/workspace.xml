@@ -4,7 +4,6 @@
     <list default="true" id="cd5f05c0-07a3-4c7b-b21f-484ff93e53b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lonely planet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lonely planet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lonely planet/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,8 @@
       <updated>1575533097765</updated>
       <workItem from="1575533103562" duration="5914000" />
       <workItem from="1575540068138" duration="362000" />
-      <workItem from="1575619887744" duration="1794000" />
+      <workItem from="1575619887744" duration="3856000" />
+      <workItem from="1575634536924" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)">
       <created>1575535459333</created>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575538846564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added a moon">
+      <created>1575621924167</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575621924167</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
     <MESSAGE value="added local jquery &#10;&#10;added north and south pools&#10;added a shadow (das/night)" />
     <MESSAGE value="added clouds" />
     <MESSAGE value="some code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="some code cleanup" />
+    <MESSAGE value="added a moon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a moon" />
   </component>
 </project>
